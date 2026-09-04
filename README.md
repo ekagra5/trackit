@@ -4,6 +4,16 @@ A simple, private, offline-first habit tracker built with React Native and Expo.
 
 No accounts. No cloud. No paywall. Your data never leaves your device.
 
+## Screenshots
+
+| Today | New Task | Analytics |
+|---|---|---|
+| ![Today screen](screenshots/today.png) | ![New task form](screenshots/new-task.png) | ![Analytics screen](screenshots/analytics.png) |
+
+| History | Settings |
+|---|---|
+| ![History screen](screenshots/history.png) | ![Settings screen](screenshots/settings.png) |
+
 ## Features
 
 - **Offline-first** — all data is stored locally on-device, no login or internet connection required
