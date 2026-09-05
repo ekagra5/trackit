@@ -4,6 +4,7 @@ import {
   Modal,
   Platform,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Switch,
   Text,
@@ -206,7 +207,20 @@ export function TaskFormSheet({
       onRequestClose={onClose}
     >
       <View style={[styles.container, { backgroundColor: c.background }]}>
-        <View style={[styles.header, { borderBottomColor: c.border, paddingTop: Platform.OS === "web" ? 20 + insets.top : 16 }]}>
+        <View
+          style={[
+            styles.header,
+            {
+              borderBottomColor: c.border,
+              paddingTop:
+                Platform.OS === "web"
+                  ? 20 + insets.top
+                  : Platform.OS === "android"
+                  ? 16 + Math.max(insets.top, StatusBar.currentHeight ?? 0, 32)
+                  : 16 + insets.top,
+            },
+          ]}
+        >
           <TouchableOpacity onPress={onClose} style={styles.headerBtn}>
             <Text style={[styles.headerBtnText, { color: c.mutedForeground }]}>Cancel</Text>
           </TouchableOpacity>

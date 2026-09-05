@@ -9,16 +9,20 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/icon.png",
+      "image": "./assets/images/adaptive-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#E0F2FE"
+      "backgroundColor": "#16A34A"
     },
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.trackit.app"
     },
     "android": {
-      "package": "com.trackit.app"
+      "package": "com.trackit.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#16A34A"
+      }
     },
     "web": {
       "favicon": "./assets/images/icon.png"
